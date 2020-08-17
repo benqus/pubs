@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["ESNext", "DOM"],
+    "outDir": "dist",
+    "declaration": true
+  },
+  "include": ["index.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "pubs",
+  "version": "0.1.0",
+  "description": "Object PubSub",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "tsc": "tsc --pretty",
+    "build": "npm test && npm run tsc",
+    "test": "mocha -r ts-node/register ./*.spec.ts",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benqus/pubs.git"
+  },
+  "keywords": [
+    "pubsub"
+  ],
+  "author": "Bence Kormos <kormos.bence@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benqus/pubs/issues"
+  },
+  "homepage": "https://github.com/benqus/pubs#readme",
+  "devDependencies": {
+    "@types/mocha": "^8.0.2",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
